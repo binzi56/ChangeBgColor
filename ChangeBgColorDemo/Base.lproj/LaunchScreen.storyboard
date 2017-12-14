@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenImage" translatesAutoresizingMaskIntoConstraints="NO" id="6Xp-XX-JeX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="火之玉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAD-NW-127">
+                                <rect key="frame" x="35" y="608" width="304" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="wJb-aj-wkn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS制作电子版签章" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SB5-0c-W1e">
+                                <rect key="frame" x="35" y="35" width="304" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Sjx-jZ-lYs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Xp-XX-JeX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="AgC-Tk-qpc"/>
+                            <constraint firstItem="HAD-NW-127" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DC0-Yc-5Yu"/>
+                            <constraint firstItem="SB5-0c-W1e" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OFJ-2p-gZg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SB5-0c-W1e" secondAttribute="trailing" constant="36" id="Rcx-4p-LM3"/>
+                            <constraint firstItem="HAD-NW-127" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Rdk-k9-p3T"/>
+                            <constraint firstItem="6Xp-XX-JeX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XKK-g1-tNH"/>
+                            <constraint firstItem="SB5-0c-W1e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="YjR-bz-6hM"/>
+                            <constraint firstItem="6Xp-XX-JeX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hLt-dE-IMi"/>
+                            <constraint firstItem="SB5-0c-W1e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="kF2-s9-ar9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HAD-NW-127" secondAttribute="bottom" constant="20" id="kYf-1s-0Gf"/>
+                            <constraint firstItem="6Xp-XX-JeX" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="tru-Vv-k2i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HAD-NW-127" secondAttribute="trailing" constant="36" id="x9z-tE-lfz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launchScreenImage" width="580" height="1031"/>
+    </resources>
+</document>
