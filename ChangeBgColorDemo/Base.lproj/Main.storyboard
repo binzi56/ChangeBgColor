@@ -32,26 +32,6 @@
                                     <constraint firstAttribute="height" constant="159" id="fk6-67-bT1"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sV8-iG-7d3">
-                                <rect key="frame" x="107" y="564" width="161" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="6Cs-9a-7sl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="生成签章">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="handleImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QdZ-Df-Z7n"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="处理后" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQu-hO-VFX">
                                 <rect key="frame" x="141" y="469" width="93" height="30"/>
                                 <constraints>
@@ -72,22 +52,103 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwY-9t-4cF">
+                                <rect key="frame" x="59" y="585" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="gKP-0J-lMj"/>
+                                    <constraint firstAttribute="width" constant="60" id="xrN-Pp-Hay"/>
+                                </constraints>
+                                <state key="normal" title="原始图">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="originImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LRB-J5-PbU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEb-GO-7eJ">
+                                <rect key="frame" x="157" y="585" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="JJl-XN-ymN"/>
+                                    <constraint firstAttribute="width" constant="60" id="XFQ-fY-T5z"/>
+                                </constraints>
+                                <state key="normal" title="灰度图">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="grayImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GGl-ys-Ulu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nN-x0-Jhi">
+                                <rect key="frame" x="255" y="585" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Mlv-pc-xa7"/>
+                                    <constraint firstAttribute="width" constant="60" id="lbI-pX-7as"/>
+                                </constraints>
+                                <state key="normal" title="高保真">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="highQualityImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5NF-cU-acU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生成签章类型" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeT-DC-4fe">
+                                <rect key="frame" x="114" y="534" width="147" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="Cvp-qf-sIB"/>
+                                    <constraint firstAttribute="height" constant="34" id="ME0-9s-noV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g82-nL-Hac">
+                                <rect key="frame" x="0.0" y="518" width="375" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="16x-f8-fmA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sV8-iG-7d3" secondAttribute="bottom" constant="53" id="2oB-9t-K8A"/>
+                            <constraint firstItem="eeT-DC-4fe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="29O-Rz-8QU"/>
                             <constraint firstItem="mQu-hO-VFX" firstAttribute="top" secondItem="wc4-aq-dOI" secondAttribute="bottom" constant="8" id="4bw-Hs-05d"/>
                             <constraint firstItem="wc4-aq-dOI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Yn-hb-yRc"/>
                             <constraint firstItem="Kxy-WY-HF9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AQX-CL-uUd"/>
                             <constraint firstItem="wc4-aq-dOI" firstAttribute="top" secondItem="dEV-eb-Klr" secondAttribute="bottom" constant="64" id="BGw-2T-8CV"/>
+                            <constraint firstItem="kEb-GO-7eJ" firstAttribute="centerY" secondItem="RwY-9t-4cF" secondAttribute="centerY" id="Bas-mk-MCK"/>
+                            <constraint firstItem="kEb-GO-7eJ" firstAttribute="top" secondItem="eeT-DC-4fe" secondAttribute="bottom" constant="17" id="I0P-5l-lde"/>
                             <constraint firstItem="dEV-eb-Klr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JL4-Ur-yg2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sV8-iG-7d3" secondAttribute="bottom" constant="53" id="M4N-ZY-3IE"/>
-                            <constraint firstItem="sV8-iG-7d3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="STt-If-sto"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sV8-iG-7d3" secondAttribute="trailing" constant="107" id="VX3-2S-oTq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sV8-iG-7d3" secondAttribute="trailing" constant="107" id="ZT8-vw-frF"/>
-                            <constraint firstItem="sV8-iG-7d3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="f9q-aZ-4fo"/>
+                            <constraint firstItem="g82-nL-Hac" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KKD-5v-I3a"/>
+                            <constraint firstItem="g82-nL-Hac" firstAttribute="top" secondItem="mQu-hO-VFX" secondAttribute="bottom" constant="19" id="KTf-Ny-h1H"/>
+                            <constraint firstItem="7nN-x0-Jhi" firstAttribute="leading" secondItem="kEb-GO-7eJ" secondAttribute="trailing" constant="38" id="LLJ-F3-SAm"/>
+                            <constraint firstItem="kEb-GO-7eJ" firstAttribute="leading" secondItem="RwY-9t-4cF" secondAttribute="trailing" constant="38" id="T9z-Cu-wWY"/>
+                            <constraint firstItem="eeT-DC-4fe" firstAttribute="top" secondItem="mQu-hO-VFX" secondAttribute="bottom" constant="35" id="ZFX-xO-Bw0"/>
+                            <constraint firstItem="kEb-GO-7eJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jNd-W2-te6"/>
+                            <constraint firstAttribute="trailing" secondItem="g82-nL-Hac" secondAttribute="trailing" id="lCf-oe-5ID"/>
                             <constraint firstItem="dEV-eb-Klr" firstAttribute="top" secondItem="Kxy-WY-HF9" secondAttribute="bottom" constant="8" id="oSR-P9-JQK"/>
-                            <constraint firstItem="sV8-iG-7d3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="wXf-qP-WWq"/>
+                            <constraint firstItem="7nN-x0-Jhi" firstAttribute="centerY" secondItem="RwY-9t-4cF" secondAttribute="centerY" id="tPk-o4-hli"/>
                             <constraint firstItem="Kxy-WY-HF9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="wqH-dE-Pw7"/>
                             <constraint firstItem="mQu-hO-VFX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wqg-an-4th"/>
                         </constraints>
