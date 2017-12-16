@@ -20,6 +20,8 @@ demo展示:
 
 ![高保真](http://upload-images.jianshu.io/upload_images/1893416-2ed17a648b9b1d31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+
 原文链接:
+
 [iOS制作电子签章](http://www.jianshu.com/p/8a951ceec54f)
 
