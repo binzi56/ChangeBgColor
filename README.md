@@ -8,9 +8,9 @@ demo展示:
 
 ![](http://upload-images.jianshu.io/upload_images/1893416-207a3d2599590cea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-原图图像:
+原始图:
 
-![原图图像](http://upload-images.jianshu.io/upload_images/1893416-b66dea0ad03274d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![原始图](http://upload-images.jianshu.io/upload_images/1893416-b66dea0ad03274d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 灰度图:
 
